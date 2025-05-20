@@ -44,7 +44,7 @@ jobs:
           name: pmd-results-${{ matrix.java }}
       - name: Publish PMD Report
         # v1.2
-        uses: jwgmeligmeyling/pmd-github-action@322e346bd76a0757c4d54ff9209e245965aa066d
+        uses: jwgmeligmeyling/pmd-github-action@f9d901e7649c450572431676d1ffb631ef969fea
         with:
           name: PMD Report JDK ${{ matrix.java }}
           path: '**/build/reports/pmd/*.xml'
