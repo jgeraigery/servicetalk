@@ -79,7 +79,7 @@ jobs:
           check_name: Test Report JDK ${{ matrix.java }}
       - name: Publish Checkstyle Report
         if: always()
-        uses: jwgmeligmeyling/checkstyle-github-action@50292990e18466f2c5d95d04ff5fab931254fa5f
+        uses: jwgmeligmeyling/checkstyle-github-action@a12be500c097a5cedab881d4785ef9b4a4d3ee6a
         with:
           name: Checkstyle Report JDK ${{ matrix.java }}
           path: '**/build/reports/checkstyle/*.xml'
