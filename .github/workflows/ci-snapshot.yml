@@ -93,7 +93,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish SpotBugs Report
         if: always()
-        uses: jwgmeligmeyling/spotbugs-github-action@b8e2c3523acb34c87f14e18cbcd2d87db8c8584e
+        uses: jwgmeligmeyling/spotbugs-github-action@875e3b6fc5b97deadd8ea150948e53c2d40b13be
         with:
           name: SpotBugs Report JDK ${{ matrix.java }}
           path: '**/build/reports/spotbugs/*.xml'
